@@ -1,0 +1,65 @@
+.banner {
+    width: 100%;
+    height: 600px;
+    text-align: left;
+}
+
+.banu {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+.titulo {
+    font-size: 80px;
+}
+
+.cont {
+    font-size: 35px;
+}
+
+.containerBody {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+
+.tc {
+    width: 100%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+.servicios {
+    width: 100%;
+    height: auto;
+    background-color: royalblue;
+}
+
+.s {
+    width: 47%;
+    height: 200px;
+    float: left;
+    /*background-color: red;*/
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.lgs {
+    width: 25%;
+    height: auto;
+    /*background-color: blue;*/
+    float: left;
+    margin-top: 2%;
+}
+
+.cs {
+    width: 70%;
+    height: auto;
+    /*background-color: brown;*/
+    float: left;
+    text-align: left;
+    padding: 10px;
+}

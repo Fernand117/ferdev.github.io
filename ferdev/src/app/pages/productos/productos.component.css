@@ -1,0 +1,193 @@
+.banner {
+    width: 100%;
+    height: 650px;
+}
+
+.contBody {
+    width: 100%;
+    height: 3100px;
+    background-color: white;
+}
+
+.titulo {
+    width: 100%;
+    height: 100px;
+    /*background-color: tomato;*/
+    text-align: center;
+    padding-top: 2%;
+}
+
+.leyenda {
+    width: 80%;
+    height: 100px;
+    /*background-color: blueviolet;*/
+    margin-left: 10%;
+    text-align: center;
+}
+
+.boton {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.imagen {
+    width: 80%;
+    height: 350px;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.imagenMock {
+    width: 65%;
+}
+
+.prodgeneral {
+    width: 100%;
+    height: 400px;
+    /*margin-top: 10%;*/
+    padding-top: 10%;
+}
+
+.descripcion {
+    width: 100%;
+}
+
+.imgGeneral {
+    width: 100%;
+}
+
+.tdes {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.admin {
+    width: 100%;
+    height: 600px;
+    background-color: #212121;
+    margin-top: 17%;
+}
+
+.categorias,
+.subcategorias {
+    width: 50%;
+    height: 600px;
+    float: left;
+    text-align: center;
+    padding: 5%;
+}
+
+.categorias {
+    background-color: white;
+}
+
+.subcategorias {
+    color: white;
+}
+
+.imgCategorias {
+    margin-top: 3%;
+    width: 100%;
+}
+
+.question {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.imgquestion,
+.response {
+    width: 70%;
+    height: 300px;
+    float: left;
+}
+
+.imgquestion {
+    width: 30%;
+}
+
+.response {
+    padding: 5%;
+}
+
+.imgQuestions {
+    width: 70%;
+}
+
+.contenedor {
+    width: 100%;
+    height: 550px;
+    background-color: #212121;
+    color: white;
+    padding: 2%;
+}
+
+.tcont {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.imagenDetalles,
+.imagenMarcas {
+    width: 50%;
+    height: 300px;
+    /*background-color: teal;*/
+    float: left;
+    padding: 5%;
+}
+
+.imgCont {
+    width: 100%;
+}
+
+.precios {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+
+.subo,
+.subt,
+.subr {
+    width: 30%;
+    height: 550px;
+    background-color: #212121;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    border-radius: 10px;
+    color: white;
+}
+
+.subo,
+.subr {
+    margin-top: 8%;
+}
+
+.subt {
+    background-color: #2962ff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+
+hr {
+    background-color: white;
+}
+
+.cont {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    text-align: justify;
+}
