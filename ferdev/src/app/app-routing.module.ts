@@ -4,6 +4,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,9 @@ const routes: Routes = [
   },
   {
     path: 'acercade', component: AcercadeComponent
+  },
+  {
+    path: 'portafolio', component: PortafolioComponent
   },
   {
     path: '**', redirectTo: 'inicio', pathMatch: 'full'
