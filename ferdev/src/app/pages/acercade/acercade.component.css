@@ -40,10 +40,9 @@
 }
 
 .hab {
-    width: 70%;
-    height: 200px;
+    width: 40%;
+    height: auto;
     /*background-color: blueviolet;*/
-    float: none;
     text-align: justify;
     padding-top: 5%;
     padding-left: 5%;
@@ -66,7 +65,7 @@
 .contacto {
     width: 100%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .conText {
