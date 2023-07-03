@@ -1,14 +1,6 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-#require_once('../assets/vendor/phpmailer/phpmailer/src/PHPMailer.php');
-#use PHPMailer\PHPMailer\PHPMailer;
-
-require_once('../assets/vendor/phpmailer/phpmailer/src/PHPMailer.php');
-require_once('../assets/vendor/phpmailer/phpmailer/src/SMTP.php');
-require_once('../assets/vendor/phpmailer/phpmailer/src/Exception.php');
+require_once('../assets/vendor/phpmailer/class.phpmailer.php');
+require_once('../assets/vendor/phpmailer/class.smtp.php');
 
 $mail = new PHPMailer(true);
 try {
@@ -20,27 +12,26 @@ try {
     $message = $_POST['message'];
 
     $mail->isSMTP();
-    $mail->Host = 'smtp.live.com'; // Cambiar al servidor SMTP de su proveedor de correo electrónico
+    $mail->Host = 'smtp.office365.com'; // Cambiar al servidor SMTP de su proveedor de correo electrónico
     $mail->SMTPAuth = true;
     $mail->Username = 'fernanddev@hotmail.com'; // Cambiar al correo electrónico del remitente
     $mail->Password = 'Master117+'; // Cambiar a la contraseña del remitente
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
+    $mail->CharSet = 'UTF-8';
     
-    $mail->setFrom($email, $name);
+    $mail->setFrom($mail->Username, $name);
     $mail->addAddress($receiving_email_address);
-    $mail->addReplyTo($email, $name);
     
     $mail->Subject = $subject;
-    $mail->Body    = $message;
+    $mail->Body    = $message."\nNombre del cliente: ".$name."\nEmail del contacto: ".$email;
     
     if(!$mail->send()) {
         echo 'El mensaje no pudo ser enviado.';
-        echo 'Error del Mailer: ' . $mail->ErrorInfo;
     } else {
         echo 'El mensaje ha sido enviado.';
     }
 } catch (Exception $ex) {
-    echo "Error en la excepcion: {$email->ErrorInfo}";
+    echo 'Por favor ingrese una dirección de correo válida.'.$ex;
 }
 ?>
